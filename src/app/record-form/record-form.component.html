@@ -1,11 +1,14 @@
 <div [hidden]="submitted">
     <h1>Record Form</h1>
     <form #recordForm="ngForm" (ngSubmit)="onSubmit()">
-        
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" #name="ngModel" class="form-control" [(ngModel)]="model.name" id="name" name="name" required>
+        </div>
 
 
 
 
-        <button type="submit" class="">Add Record</button>
+        <button type="submit" class="btn btn-success">Add Record</button>
     </form>
 </div>

@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "coffee-tracker:build:production"
+              "buildTarget": "coffee-tracker:build:production"
             },
             "development": {
-              "browserTarget": "coffee-tracker:build:development"
+              "buildTarget": "coffee-tracker:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "coffee-tracker:build"
+            "buildTarget": "coffee-tracker:build"
           }
         },
         "test": {
