@@ -10,6 +10,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SvgComponent } from './svg/svg.component';
+import { RecordFormComponent } from './record-form/record-form.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +19,15 @@ import { SvgComponent } from './svg/svg.component';
     RecordListComponent,
     MessagesComponent,
     DashboardComponent,
-    SvgComponent
+    SvgComponent,
+    RecordFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

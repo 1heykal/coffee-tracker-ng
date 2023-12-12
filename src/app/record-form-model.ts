@@ -1,4 +1,4 @@
-export class RecordModel {
+export class RecordFormModel {
     constructor(
         public name: string,
         public description: string,

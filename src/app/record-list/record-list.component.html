@@ -1,21 +1,4 @@
 <h2>Coffee Records</h2>
-<form action="post" >
-
-    <label for="new-record-name">Coffee Name: </label>
-    <input id="new-record-name" />
-
-    <label for="new-record-description">Description: </label>
-    <input id="new-record-description" />
-
-    <label for="new-record-type">Type: </label>
-    <input id="new-record-type"/>
-
-    <label for="new-record-consumingn-date">Consumingn date: </label>
-    <input type="datetime"  id="new-record-consumingn-date" />
-  
-    <button type="submit" class="add-button">Add</button>
-
-</form>
 <ul class="records">
      <li *ngFor="let record of records">
         <a routerLink="/records/{{record?.id}}">

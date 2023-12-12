@@ -40,6 +40,13 @@ export class CoffeeService {
      );
   }
 
+  addRecord(record: Record) : Observable<any> {
+    return this.http.post(this.recordsUrl, record).pipe(
+      tap(_ => this.log(`added record id= ${record.id}`)),
+      catchError(this.handleError<any>('addRecord'))
+    );
+  }
+
   // httpOptions = {
   //   headers: new HttpHeaders({'Content-Type': 'application/json'})
   // };
