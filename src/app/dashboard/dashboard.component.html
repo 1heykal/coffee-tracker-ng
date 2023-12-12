@@ -1,0 +1,6 @@
+<h2>Top Records</h2>
+<div class="records-menu">
+    <a routerLink="/records/{{record.id}}"   *ngFor="let record of records">
+    {{record.name}}
+    </a>
+</div>

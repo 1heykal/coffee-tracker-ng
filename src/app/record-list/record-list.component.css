@@ -1,0 +1,28 @@
+*, *::after{
+    box-sizing: border-box;
+}
+
+a{
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 10px;;
+    color: ghostwhite;
+    padding: 10px;
+    text-decoration: none;   
+}
+
+.record-id{
+    background-color: brown;
+    margin-right: 10px;
+    justify-self: flex-start;
+}
+.coffee-name {
+    margin-right: 25px;
+}
+
+ul {
+   list-style-type: none;
+}

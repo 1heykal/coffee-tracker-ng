@@ -1,0 +1,17 @@
+a { 
+    text-decoration: none;
+}
+
+#first{
+    background-image: url('../assets/images/2229941.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after{
+    margin: 0;
+    padding: 0;
+}
