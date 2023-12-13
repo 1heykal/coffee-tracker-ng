@@ -42,7 +42,7 @@ export class CoffeeService {
 
   addRecord(record: Record) : Observable<any> {
     return this.http.post(this.recordsUrl, record).pipe(
-      tap(_ => this.log(`added record id= ${record.id}`)),
+      tap(response => this.log(`added record id= ${(response as Record).id}`)),
       catchError(this.handleError<any>('addRecord'))
     );
   }

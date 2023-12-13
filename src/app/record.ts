@@ -1,5 +1,5 @@
 export interface Record{
-    id: number,
+    id?: number,
     name: string,
     description: string,
     type: string,

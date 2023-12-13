@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SvgComponent } from './svg/svg.component';
 import { RecordFormComponent } from './record-form/record-form.component';
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,8 +26,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    BsDatepickerModule.forRoot()
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
