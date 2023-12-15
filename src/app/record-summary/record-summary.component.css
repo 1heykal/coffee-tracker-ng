@@ -1,0 +1,17 @@
+.info {
+    background-image: url("../../assets/images/single-cup.jpg");
+    background-position: left;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    color: #936639;
+    background-color: transparent;
+    border: 2px solid #936639;
+}
+
+button:hover{
+    border: 2px solid #A68A64;
+    color: #A68A64;
+}

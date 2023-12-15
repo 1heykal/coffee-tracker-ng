@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./svg.component.css']
 })
 export class SvgComponent {
-  fillColor = 'rgb(157, 70, 11)';
+  fillColor = 'rgb(127, 79, 36)';
 
   changeColor(){
     const r = Math.floor(Math.random() * 255);

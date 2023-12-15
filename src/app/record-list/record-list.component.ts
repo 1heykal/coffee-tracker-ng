@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Record } from '../record';
 import { CoffeeService } from '../coffee.service';
 import { MessageService } from '../message.service';
+
 @Component({
   selector: 'app-record-list',
   templateUrl: './record-list.component.html',
@@ -16,11 +17,10 @@ export class RecordListComponent implements OnInit{
   ngOnInit(): void {
     this.getRecords();
   }
-
  
   getRecords() : void{
     this.coffeeService.getRecords()
           .subscribe(records => this.records = records);
   }
-
+  
 }

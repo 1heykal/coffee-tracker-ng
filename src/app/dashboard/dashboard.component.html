@@ -1,6 +1,12 @@
-<h2>Top Records</h2>
-<div class="records-menu">
+<div class="content-wrap dashboard">
+    <nav>
+        <a routerLink="/records">Records</a>
+        <a routerLink="../summary">Summary</a>
+    </nav>
+    <h2>Top Records</h2>
     <a routerLink="/records/{{record.id}}"   *ngFor="let record of records">
     {{record.name}}
     </a>
+    <button routerLink="../new">Add Record</button>
 </div>
+

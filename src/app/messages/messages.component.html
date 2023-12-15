@@ -1,11 +1,11 @@
-<div *ngIf="messageService.messages.length">
+<div class="content-wrap" *ngIf="messageService.messages.length">
 
     <h2>Messages</h2>
-    <button type="button" class="clear" (click)="messageService.clear()">
+    <button type="button" class="clear btn" (click)="messageService.clear()">
         Clear Messages
     </button>
-    <div *ngFor="let message of messageService.messages">
-        {{message}}
+    <div class="message" *ngFor="let message of messageService.messages" [class]="{'alert': true, 'alert-success': message.success, 'alert-danger': !message.success}">
+        {{message.content}}
     </div>
 
 </div>

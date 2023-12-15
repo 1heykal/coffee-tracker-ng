@@ -1,13 +1,18 @@
-<h2>Coffee Records</h2>
-<ul class="records">
-     <li *ngFor="let record of records">
-        <a routerLink="/records/{{record?.id}}">
-          <span class="record-id">{{record?.id}} </span>
-          <span class="coffee-name">{{record?.name | uppercase}}</span>
-          <span class="coffe-description">{{record?.description}}</span>
-        </a>
-     </li>
-</ul>
-
-
-
+<div class="content-wrap record-list">
+      <nav>
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="../summary">Summary</a>
+    </nav>
+  <button routerLink="../new">Add Record</button>
+  <ul class="records">
+    <li *ngFor="let record of records">
+      <a routerLink="/records/{{record?.id}}">
+        <span class="record-id">{{record?.id}} </span>
+        <span class="coffee-name">{{record?.name | uppercase}}</span>
+        <span class="coffe-description">{{record?.description}}</span>
+        <span class="coffe-type">{{record?.type}}</span>
+        <span class="coffe-cost">{{record?.cost | currency: 'EGP'}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

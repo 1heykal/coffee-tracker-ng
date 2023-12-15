@@ -3,6 +3,7 @@ export class RecordFormModel {
         public name: string,
         public description: string,
         public type: string,
-        public consumingDate: string
+        public consumingDate: string,
+        public cost: number
     ) { }
 }

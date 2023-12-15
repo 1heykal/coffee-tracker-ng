@@ -3,6 +3,7 @@ export interface Record{
     name: string,
     description: string,
     type: string,
-    consumingDate: string
+    consumingDate: string,
+    cost: number
 }
 

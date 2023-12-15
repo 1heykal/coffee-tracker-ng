@@ -1,0 +1,13 @@
+<div class="content-wrap info">
+    <app-svg></app-svg>
+    <div class="data">
+        <h1>{{title}}</h1>
+        <p>Number of cups: {{records.length}}</p>
+        <p>Total Cost: {{totalCost| currency: 'EGP'}}</p>
+    </div>
+    <nav>
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/records">Records</a>
+    </nav>
+    <button routerLink="../new">Add Record</button>
+</div>

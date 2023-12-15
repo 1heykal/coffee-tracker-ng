@@ -1,0 +1,22 @@
+.dashboard{
+    background-image: url('../../assets/images/disk-cup.jpg');
+    background-position: bottom;
+}
+button {
+    margin-right: 10px ;
+    display: block;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid #582F0E;
+    color: #582F0E;
+}
+
+button:hover{
+    border: 2px solid #7F4F24;
+    color: #7F4F24;
+
+}
+
+a{
+    text-decoration: none;
+}

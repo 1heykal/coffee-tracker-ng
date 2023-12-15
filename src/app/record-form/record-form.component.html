@@ -1,6 +1,11 @@
-<div [hidden]="submitted">
+<div class="content-wrap new-form">
+    <div class="nav">
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/records">Records</a>
+        <a routerLink="/summary">Summary</a>
+      </div>
     <h1>Record Form</h1>
-    <form  #recordForm="ngForm" (ngSubmit)="onSubmit()">
+    <form  #newRecordForm="ngForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" #name="ngModel" class="form-control" [(ngModel)]="model.name" id="name" name="name" required>
@@ -19,16 +24,20 @@
             <label for="type">Type</label>
             <input type="text" #type="ngModel" id="type" [(ngModel)]="model.type" class="form-control" required name="type">
         </div>
+        <div class="form-group">
+            <label for="cost">Cost</label>
+            <input type="text" #cost="ngModel" id="cost" [(ngModel)]="model.cost" class="form-control" required name="cost">
+        </div>
         <div [hidden]="type.valid || type.pristine" class="alert alert-danger">
             Type is required
         </div>
         <div class="form-group">
             <label for="consuming-date">Consuming Date</label>
-            <input type="datetime-local" #consumingDate="ngModel"  class="form-control" id="consuming-date" name="consumingDate" [(ngModel)]="model.consumingDate" required>
+            <input type="datetime-local" #consumingDate="ngModel"  class="form-control" id="consuming-date" name="consumingDate"  [(ngModel)]="model.consumingDate" required>
         </div>
         <div [hidden]="consumingDate.valid || consumingDate.pristine" class="alert alert-danger">
             Consumig Date is required
         </div>
-        <button type="submit" class="btn btn-success" [disabled]="!recordForm.form.valid">Add Record</button>
+        <button type="submit" class="btn btn-success" [disabled]="!newRecordForm.form.valid">Add Record</button>
     </form>
 </div>

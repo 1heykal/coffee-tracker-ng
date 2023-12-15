@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
 
   getRecords() {
     this.coffeeService.getRecords()
-      .subscribe(records => this.records = records.slice(1, 5));
+      .subscribe(records => this.records = records.sort(r => r.cost).slice(0,5));
   }
 
 }

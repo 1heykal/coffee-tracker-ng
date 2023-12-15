@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SvgComponent } from './svg/svg.component';
 import { RecordFormComponent } from './record-form/record-form.component';
+import { RecordSummaryComponent } from './record-summary/record-summary.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RecordFormComponent } from './record-form/record-form.component';
     MessagesComponent,
     DashboardComponent,
     SvgComponent,
-    RecordFormComponent
+    RecordFormComponent,
+    RecordSummaryComponent
   ],
   imports: [
     BrowserModule,

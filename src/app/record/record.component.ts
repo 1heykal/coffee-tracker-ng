@@ -11,7 +11,9 @@ import { Location } from '@angular/common';
 })
 export class RecordComponent implements OnInit{
 
-  record: Record | undefined;
+  record!: Record ;
+
+   id = Number(this.route.snapshot.paramMap.get('id'))
 
   constructor(private route: ActivatedRoute,
     private coffeeService: CoffeeService,
@@ -23,8 +25,8 @@ export class RecordComponent implements OnInit{
   }
 
   getRecord(){
-    const id = Number(this.route.snapshot.paramMap.get('id'))
-    this.coffeeService.getRecord(id)
+    
+    this.coffeeService.getRecord(this.id)
     .subscribe(record => this.record = record);
   }
 
@@ -35,6 +37,11 @@ export class RecordComponent implements OnInit{
   save() : void{
     this.coffeeService.updateRecord(this.record)
       .subscribe(() => this.goBack());
+  }
+
+  delete(): void {
+    this.coffeeService.deleteRecord(this.id)
+    .subscribe(() => this.goBack());
   }
 
 
