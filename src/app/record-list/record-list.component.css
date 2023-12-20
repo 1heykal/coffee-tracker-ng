@@ -76,3 +76,21 @@ button:hover{
     border: 2px solid #A68A64;
     color: #A68A64;
 }
+
+#search-box{
+    opacity: 70%;
+    border: 1px solid saddlebrown;
+    border-radius: 3px;
+    border-left: 5px solid #936639;
+
+}
+
+label{
+    margin-top: 20px;
+    display: block;
+}
+
+#search-box:focus{
+    outline-width: 1px;
+    outline-color:  #936639;
+}

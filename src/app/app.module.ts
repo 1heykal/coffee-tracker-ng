@@ -22,7 +22,7 @@ import { RecordSummaryComponent } from './record-summary/record-summary.componen
     DashboardComponent,
     SvgComponent,
     RecordFormComponent,
-    RecordSummaryComponent
+    RecordSummaryComponent,
   ],
   imports: [
     BrowserModule,

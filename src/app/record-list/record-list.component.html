@@ -4,8 +4,12 @@
         <a routerLink="../summary">Summary</a>
     </nav>
   <button routerLink="../new">Add Record</button>
+  <div id="search-component">
+    <label for="search-box">Coffee Search</label>
+    <input #searchBox id="search-box" type="search" (input)="search(searchBox.value)"/>
+</div>      
   <ul class="records">
-    <li *ngFor="let record of records">
+    <li *ngFor="let record of searchRecords.length? searchRecords : records">
       <a routerLink="/records/{{record?.id}}">
         <span class="record-id">{{record?.id}} </span>
         <span class="coffee-name">{{record?.name | uppercase}}</span>

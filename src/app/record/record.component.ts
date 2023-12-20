@@ -25,7 +25,6 @@ export class RecordComponent implements OnInit{
   }
 
   getRecord(){
-    
     this.coffeeService.getRecord(this.id)
     .subscribe(record => this.record = record);
   }
@@ -43,7 +42,6 @@ export class RecordComponent implements OnInit{
     this.coffeeService.deleteRecord(this.id)
     .subscribe(() => this.goBack());
   }
-
 
 
 }
