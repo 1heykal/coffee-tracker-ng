@@ -63,6 +63,7 @@ span{
 .record-list{
     background-image: url('../../assets/images/cups-2.jpg');
     background-position: bottom;
+    height: 100%
 }
 button {
     display: block;
